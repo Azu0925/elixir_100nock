@@ -1,8 +1,6 @@
 defmodule Elixir100nock.App do
   use Application
 
-  import One
-
   def start(_type, _args) do
     IO.puts "=======================================================================\n"
     IO.puts "|                                                                     |\n"
@@ -10,7 +8,6 @@ defmodule Elixir100nock.App do
     IO.puts "|     これをElixirでやってみたよ                                      |\n"
     IO.puts "|                                                                     |\n"
     IO.puts "=======================================================================\n"
-    One.reverseOrder()
-
+    One.zero()
   end
 end
