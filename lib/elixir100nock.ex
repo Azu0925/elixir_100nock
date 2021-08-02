@@ -9,5 +9,6 @@ defmodule Elixir100nock.App do
     IO.puts "|                                                                     |\n"
     IO.puts "=======================================================================\n"
     One.zero()
+    One.one()
   end
 end

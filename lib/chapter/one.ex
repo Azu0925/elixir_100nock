@@ -4,6 +4,14 @@ defmodule One do
     reverse("", String.split("stressed", "", trim: true))
   end
 
+  def one do
+    IO.puts "「パタトクカシーー」という文字列の1,3,5,7文字目を取り出して連結した文字列を得よ．"
+    text = String.split("パタトクカシーー", "", trim: true)
+    |> List.to_tuple
+    IO.puts("\nA. " <> elem(text, 0) <> elem(text, 2) <> elem(text, 4) <> elem(text, 6))
+    IO.puts("\n==================================\n")
+  end
+
   defp reverse(text, list) do
     case list do
       [] ->
