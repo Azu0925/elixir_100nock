@@ -8,7 +8,8 @@ defmodule Elixir100nock.App do
     IO.puts "|     これをElixirでやってみたよ                                      |\n"
     IO.puts "|                                                                     |\n"
     IO.puts "=======================================================================\n"
-    One.zero()
-    One.one()
+    One.zero
+    One.one
+    One.two
   end
 end

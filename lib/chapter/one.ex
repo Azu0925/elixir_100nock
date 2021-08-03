@@ -12,6 +12,29 @@ defmodule One do
     IO.puts("\n==================================\n")
   end
 
+  def two do
+    IO.puts "「パトカー」＋「タクシー」の文字を先頭から交互に連結して文字列「パタトクカシーー」を得よ．"
+    police_car = "パトカー"
+    taxi = "タクシー"
+
+    IO.write "\n A. "
+    for x <- 0..3 do
+      police_car
+      |> String.split("", trim: true)
+      |> List.to_tuple
+      |> elem(x)
+      |> IO.write
+
+      taxi
+      |> String.split("", trim: true)
+      |> List.to_tuple
+      |> elem(x)
+      |> IO.write
+
+    end
+    IO.puts "\n=================================\n"
+  end
+
   defp reverse(text, list) do
     case list do
       [] ->
